@@ -1,8 +1,0 @@
-name: LetilSystem
-version: 1.0
-main: com.letilsystem.plugin.Main
-api-version: "1.21"
-commands:
-  letil:
-    description: Letil ana komutu.
-    usage: /letil [baslat/durdur]
