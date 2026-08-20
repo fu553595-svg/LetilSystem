@@ -12,6 +12,10 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-          server-id: github
       - name: Build with Maven
         run: mvn clean package
+      - name: Upload JAR Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: LetilSystem
+          path: target/*.jar
